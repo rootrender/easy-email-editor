@@ -94,6 +94,8 @@ export default class TableOperationMenu {
 
     this.domNode = document.createElement('div');
     this.domNode.classList.add('easy-email-table-operation-menu');
+    this.domNode.style.cssText =
+      'max-height: 250px !important;min-height: auto !important; overflow-y: scroll !important;';
     setStyle(this.domNode, { display: 'none' });
 
     for (let name in this.menuItems) {
